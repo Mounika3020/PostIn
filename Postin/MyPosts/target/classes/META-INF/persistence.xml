@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="Post">
+	<provider></provider>
+	  	
+	  	<class> com.iss.models.MyMessageModel</class>
+	  	<class> com.iss.models.MyPostsModel</class>
+	  	<class> com.iss.models.MyFriendsPostModel</class>
+	  	<class> com.iss.models.MyFriendsModel</class>
+	  	<class> com.iss.models.MyUserModel</class>
+		<properties>  
+			<property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>  
+			<property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://LAPTOP-18K3CLLS\SQLEXPRESS;encrypt=true;trustServerCertificate=true;databaseName=mydatabase"/>
+			 <property name="javax.persistence.jdbc.user" value="janardhan"/>
+            <property name="javax.persistence.jdbc.password" value="janardhan"/>
+			
+			<property name="eclipselink.ddl-generation" value="create-or-extend-tables"/> 
+		</properties>  
+	</persistence-unit>
+</persistence>

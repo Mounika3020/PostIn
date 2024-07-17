@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>MyPosts</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>MyMessageServlet</servlet-name>
+  	<servlet-class>com.iss.servlets.MyMessageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MyMessageServlet</servlet-name>
+  	<url-pattern>/MyMessage</url-pattern>
+  </servlet-mapping>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>MyPostsServlet</servlet-name>
+  	<servlet-class>com.iss.servlets.MyPostsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MyPostsServlet</servlet-name>
+  	<url-pattern>/MyPst</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>MyFriendsPostServlet</servlet-name>
+  	<servlet-class>com.iss.servlets.MyFriendsPostServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MyFriendsPostServlet</servlet-name>
+  	<url-pattern>/MyFPS</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>MyFriendsServlet</servlet-name>
+  	<servlet-class>com.iss.servlets.MyFriendsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MyFriendsServlet</servlet-name>
+  	<url-pattern>/MyFS</url-pattern>
+  </servlet-mapping>
+  <servlet>
+	<servlet-name>MyUserServlet</servlet-name>
+  	<servlet-class>com.iss.servlets.MyUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MyUserServlet</servlet-name>
+  	<url-pattern>/MyUS</url-pattern>
+  </servlet-mapping>
+  <servlet>
+	<servlet-name>GetImageForPost</servlet-name>
+  	<servlet-class>com.iss.servlets.GetImageForPost</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>GetImageForPost</servlet-name>
+  	<url-pattern>/GetImageForPost</url-pattern>
+  </servlet-mapping>
+  <filter>
+  	<filter-name>Authentication</filter-name>
+  	<filter-class>com.iss.filters.Authentication</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>Authentication</filter-name>
+  	<url-pattern>/Login</url-pattern>
+  </filter-mapping>
+ 
+  
+</web-app>
